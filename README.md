@@ -12,6 +12,8 @@ For the construction of the network, tensorflow and keras were used
 
 '
 $ git clone https://github.com/zeusdh/Christmas-tree-generator
+
+
 $ python3 main.py
 '
 
