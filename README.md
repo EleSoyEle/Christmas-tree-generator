@@ -9,14 +9,9 @@ For the construction of the network, tensorflow and keras were used
 
 ## Installation and use
 
+´$ git clone https://github.com/zeusdh/Christmas-tree-generator´
 
-'
-$ git clone https://github.com/zeusdh/Christmas-tree-generator
-
-
-$ python3 main.py
-'
-
+´$ python3 main.py´
 
 Additionally you have to install the checkpoints of the model to be able to use it and you will put them in a folder called '''checkpoints'''
 
