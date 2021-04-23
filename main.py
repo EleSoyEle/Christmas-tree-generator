@@ -2,19 +2,17 @@ from utils import generate_image,create_model
 import sys
 import cv2
 import matplotlib.pyplot as plt
-import time
 import tensorflow as tf
 import os
 import numpy as np
 def main():
     model = create_model()
-    ckpt_dir = "checkpoints/"
     ckpt = tf.train.Checkpoint(
         generator=model)
     ckpt.restore("checkpoints/ckpt-1").expect_partial()
-    path = "imagenes_creadas/"
+    path = "results/"
     while True:
-        opt = str(input("Deseas crear una imagen o salir[y/n]: "))
+        opt = str(input("Deseas crear una imagen[y/n]: "))
         if opt.lower() == "y":
             print("Crearemos la imagen")
             print("Espera un momento")
